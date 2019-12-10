@@ -2,6 +2,8 @@
 
 exports[`CardView renders the component 1`] = `
 <div>
-  CardView
+  <likebutton-stub></likebutton-stub>
+  <skipbutton-stub></skipbutton-stub>
+  <dislikebutton-stub></dislikebutton-stub>
 </div>
 `;

@@ -1,11 +1,22 @@
 <script>
+import LikeButton from '@/components/LikeButton'
+import SkipButton from '@/components/SkipButton'
+import DislikeButton from '@/components/DislikeButton'
+
 export default {
-  name: 'CardView'
+  name: 'CardView',
+  components: {
+    LikeButton,
+    SkipButton,
+    DislikeButton
+  }
 }
 </script>
 
 <template>
   <div>
-    CardView
+    <LikeButton />
+    <SkipButton />
+    <DislikeButton />
   </div>
 </template>
