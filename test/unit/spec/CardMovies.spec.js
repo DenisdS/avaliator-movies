@@ -1,3 +1,0 @@
-describe('CardMovies', () => {
-  it('works', () => {})
-})
