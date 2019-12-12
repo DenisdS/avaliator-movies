@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardInfo renders the component CardInfo 1`] = `
+<div class="card-info"><img class="card-info__poster">
+  <div class="card-info__title">
+    The Matrix
+  </div>
+  <div class="card-info__date">
+    21/05/1999
+  </div>
+  <div class="card-info__genre">
+    Ficção
+  </div>
+  <div class="card-info__populary">
+    5
+  </div>
+  <div class="card-info__overview">
+    Em um futuro próximo, Thomas Anderson (Keanu Reeves), um jovem programador de computador que mora em um cubículo escuro, é atormentado por estranhos pesadelos nos quais encontra-se conectado por cabos e contra sua vontade, em um imenso sistema de computadores do futuro. Em todas essas ocasiões, acorda gritando no exato momento em que os eletrodos estão para penetrar em seu cérebro. À medida que o sonho se repete, Anderson começa a ter dúvidas sobre a realidade.
+  </div>
+</div>
+`;
