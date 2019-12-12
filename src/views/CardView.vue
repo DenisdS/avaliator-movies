@@ -1,4 +1,5 @@
 <script>
+import { mapState } from 'vuex'
 import CardInfo from '@/components/CardInfo'
 import LikeButton from '@/components/LikeButton'
 import SkipButton from '@/components/SkipButton'
@@ -12,10 +13,10 @@ export default {
     SkipButton,
     DislikeButton
   },
-  data () {
-    return {
-      card: { movie: '' } 
-    }
+  computed: {
+    ...mapState({
+      card: 'card',
+    })
   }
 }
 </script>
