@@ -8,10 +8,15 @@ import DislikeButton from '@/components/DislikeButton'
 export default {
   name: 'CardView',
   components: {
-    CardInfo,
     LikeButton,
     SkipButton,
-    DislikeButton
+    DislikeButton,
+    CardInfo
+  },
+  methods : {
+    likeMovie(title) {
+      this.$store.dispatch('LIKE_MOVIE', { title })
+    }
   },
   computed: {
     ...mapState({
@@ -24,7 +29,8 @@ export default {
 <template>
   <div>
     <CardInfo :card="card" />
-    <LikeButton />
+    <LikeButton 
+      @liked="likeMovie" />
     <SkipButton />
     <DislikeButton />
   </div>
