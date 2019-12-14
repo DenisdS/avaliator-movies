@@ -11,8 +11,8 @@ describe('CardInfo', () => {
     })
     return {
       wrapper,
-      title: () => wrapper.find('.card-info__title'),
       poster_path: () => wrapper.find('.card-info__poster'),
+      title: () => wrapper.find('.card-info__title'),
       release_date: () => wrapper.find('.card-info__date'),
       genre_id: () => wrapper.find('.card-info__genre'),
       populary: () => wrapper.find('.card-info__populary'),
@@ -35,13 +35,13 @@ describe('CardInfo', () => {
 
   it('renders main components via props', () => {
     
-    const { title, poster_path, release_date, genre_id, populary, overview } = build()
+    const { poster_path, title, release_date, genre_id, populary, overview } = build()
     
-    expect(title().exists()).toBe(true)
-    expect(title().text()).toBe(props.card.title)
-
     expect(poster_path().exists()).toBe(true)
     expect(poster_path().attributes().src).toBe(props.card.poster_url)
+
+    expect(title().exists()).toBe(true)
+    expect(title().text()).toBe(props.card.title)
 
     expect(release_date().exists()).toBe(true)
     expect(release_date().text()).toBe(props.card.release_date)
